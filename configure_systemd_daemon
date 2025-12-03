@@ -1,0 +1,9 @@
+systemctl daemon-reload
+systemctl start pyserverd.service
+systemctl enable pyserverd.service
+echo "Now the pyserverd.service automatically starts to execute at the time of boot-loading"
+echo""
+echo"---------------------------Verfiy by---------------------------"
+systemctl status pyserverd.service
+echo "--------------------------------------------------------------"
+echo "Please read README.md to take final steps"

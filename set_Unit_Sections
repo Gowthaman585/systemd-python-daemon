@@ -1,0 +1,16 @@
+cd /etc/systemd/system/
+
+echo "[Unit]
+Description=PyServer Daemon running Succesfully
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/$SUDO_USER/pyHttpServer.py
+Restart=always 
+WorkingDirectory=/home/$SUDO_USER
+User=$SUDO_USER
+
+[Install]
+WantedBy=multi-user.target" >> pyserverd.service
+
+echo "Unit file successfully created.move to /etc/systemd/system/ to ensure the presence of pyserverd.service."
