@@ -1,8 +1,8 @@
-#Before executing this handson ensure you have connected to you server
+#Before executing this handson ensure you have connected to your server
 
 #Run all the scripts with sudo permissions
 
-#Here Ubunutu-Server is used at the time of demonstrating this project
+#Here Ubunutu-Server is used at the time of demonstrating this project and parrot OS-HOME is used as host os 
 
 #STEP 1 : The pyHttpServer.py must be in the /home/{user}/ directory 
 
